@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta
+    http-equiv="content-security-policy"
+    content="
+    connect-src https://maps.googleapis.com 'self';
+    script-src 'self' https://maps.googleapis.com  'unsafe-inline';
+    style-src 'self' 'unsafe-inline' https://fonts.googleapis.com"
+    />
+    <link rel="stylesheet" href="style.css">
+    <title>Geolocation</title>
+</head>
+<body>
+    <main>
+    <div id="map"></div>
+    <div id="info"><h1>Your Location</h1>
+        <p>Latitude: <span></span></p>
+        <p>Longitude: <span></span></p></div>
+    </main>
+</body>
+<script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBLry8xXmuazGmJMNSlzF1q6iIzm5C5cq4"></script>
+<script defer src="main.js"></script>
+</html>
